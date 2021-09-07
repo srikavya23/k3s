@@ -12,7 +12,7 @@ spec:
     solvers:
     - selector:
         dnsZones:
-          - "kavya.host"
+          - "kavya.website"
       dns01:
         route53:
           region: us-east-1
