@@ -9,10 +9,10 @@ spec:
     name: letsencrypt-prod
     kind: ClusterIssuer
   dnsNames:
-    - '*.kavya.host'
+    - '*.kavya.website'
   acme:
     config:
       - dns01:
           provider: route53
         domains:
-          - '*.kavya.host'
+          - '*.kavya.website'
