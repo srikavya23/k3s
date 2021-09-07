@@ -4,15 +4,9 @@ metadata:
   name: nginx-tls
   namespace: cert-manager
 spec:
-  secretName: nginx-tls
+  secretName: nginxtls
   issuerRef:
-    name: letsencrypt-prod
-    kind: ClusterIssuer
+    name: letsencrypt-staging
   dnsNames:
-    - '*.kavya.website'
-  acme:
-    config:
-      - dns01:
-          provider: route53
-        domains:
-          - '*.kavya.website'
+  - '*.kavya.website'
+  
